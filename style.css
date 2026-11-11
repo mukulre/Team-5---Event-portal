@@ -1,192 +1,62 @@
-/* =========================
-   TEAM 5 EVENT PORTAL
-========================= */
-
+:root {
+    --brand: #164e63;
+    --accent: #22c55e;
+}
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
     line-height: 1.6;
-    background: #f4f7fc;
-    color: #333;
 }
-
-/* Header */
+ 
 header {
-    background: #0f172a;
-    color: white;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    font-size: 28px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #60a5fa;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #2563eb, #1e40af);
-    color: white;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-}
-
-.hero button {
-    background: white;
-    color: #2563eb;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.hero button:hover {
-    background: #dbeafe;
-}
-
-/* Events */
-.events {
-    padding: 60px 20px;
-}
-
-.events h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #1e3a8a;
-}
-
-.events .container {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.event-card {
-    background: white;
-    width: 320px;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.event-card:hover {
-    transform: translateY(-8px);
-}
-
-.event-card h3 {
-    color: #2563eb;
-    margin-bottom: 15px;
-}
-
-.event-card p {
-    margin-bottom: 10px;
-}
-
-.event-card button {
-    width: 100%;
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.event-card button:hover {
-    background: #1d4ed8;
-}
-
-/* About & Contact */
-#about,
-#contact {
-    padding: 60px 20px;
-    text-align: center;
-    background: white;
-}
-
-#about h2,
-#contact h2 {
-    color: #1e3a8a;
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-    background: #0f172a;
+    background: var(--brand);
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
 }
-
-/* Mobile */
-@media (max-width: 768px) {
-
-    header .container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .event-card {
-        width: 100%;
-    }
+ 
+nav {
+    margin-top: 15px;
+}
+ 
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+ 
+section {
+    padding: 25px;
+}
+ 
+h2 {
+    color: var(--brand);
+    margin-bottom: 10px;
+}
+ 
+#event-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+ 
+.event-card {
+    background: #ecfeff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    transition: transform 0.2s ease;
+}
+ 
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #0002;
 }
