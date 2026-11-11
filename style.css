@@ -1,0 +1,62 @@
+:root {
+    --brand: #164e63;
+    --accent: #22c55e;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    line-height: 1.6;
+}
+ 
+header {
+    background: var(--brand);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+ 
+nav {
+    margin-top: 15px;
+}
+ 
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+ 
+section {
+    padding: 25px;
+}
+ 
+h2 {
+    color: var(--brand);
+    margin-bottom: 10px;
+}
+ 
+#event-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+ 
+.event-card {
+    background: #ecfeff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    transition: transform 0.2s ease;
+}
+ 
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #0002;
+}
